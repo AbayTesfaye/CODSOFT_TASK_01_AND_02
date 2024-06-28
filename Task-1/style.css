@@ -344,6 +344,58 @@ span {
   width: 95%;
 }
 
+.projects-section {
+  background: var(--second-bg-color);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  /* background-color: #fff; */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding: 20px;
+}
+.project-info p {
+  font-size: 12px;
+}
+
+.project-info h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 65%;
