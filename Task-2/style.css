@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-section {
+  margin: 2rem;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(97, 218, 240, 0.8),
+      rgba(217, 255, 0, 0.8)
+    ),
+    url(../Task-1/Images/cake-2.avif);
+  background-size: cover;
+}
+.header-top {
+  margin: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  margin: 10px;
+  font-size: 24px;
+  font-family: cursive;
+}
+a {
+  text-decoration: none;
+}
+.header-item ul {
+  list-style-type: none;
+}
+.header-item ul li a {
+  margin-right: 10px;
+}
