@@ -100,7 +100,48 @@ header .navigation a:hover {
   position: relative;
   color: #111;
   font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
 }
 .media-icons a:not(:last-child) {
   margin-right: 60px;
+}
+.media-icons a:hover {
+  transform: scale(1.5);
+}
+label {
+  display: none;
+}
+#check {
+  z-index: 3;
+}
+
+/* responsive design */
+@media (max-width: 960px) {
+  header .navigation {
+    display: none;
+  }
+  label {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+  label:hover {
+    color: #fff;
+  }
+  label .close-btn {
+    display: none;
+  }
+  #check:checked ~ header .navigation {
+    z-index: 2;
+    position: fixed;
+    background: rgba(114, 223, 255, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+  }
 }
